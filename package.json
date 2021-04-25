@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npx tsc && node dist/index.js",
-    "dev": "concurrently -n \"TS, Node\" \"npx tsc --watch\" \"nodemon dist/index.js\""
+    "dev": "concurrently -n \"TS, Node\" \"npx tsc --watch\" \" npx jest --verbose --watchAll \"   \"nodemon dist/index.js\"",
+    "test":"npx jest --verbose",
+    "test-watch":"npx jest --verbose --watchAll"
   },
   "author": "Oussama Zaghdoud",
   "license": "ISC",
