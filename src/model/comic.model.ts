@@ -10,4 +10,6 @@ let comicSchema= new mongoose.Schema({
 });
 comicSchema.plugin(mongoosePaginate);
 const Comic=mongoose.model("Comic",comicSchema);
+
+
 export default Comic;
